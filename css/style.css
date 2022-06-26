@@ -140,7 +140,7 @@ body {
 
 .order-form_submit:hover,
 .order-form_submit:active {
-  background: #1b8506;
+  background: #39cb1c;
 }
 
 .menu {
@@ -334,7 +334,7 @@ body {
 
 .request-form_submit:hover,
 .request-form_submit:active {
-  background: #1b8506;
+  background: #39cb1c;
 }
 
 a {
@@ -827,3 +827,105 @@ a {
 }
 
 /*cooperation style end*/
+
+/* footer style start*/
+.footer {
+  width: 1920px;
+  height: 299px;
+  background: #363130;
+  margin-top: -20px;
+}
+.footer_wrapper {
+  display: flex;
+}
+.footer_item {
+  display: block;
+  padding-top: 50px;
+  padding-left: 170px;
+}
+.footer_logo {
+  margin-bottom: 52px;
+  margin-right: 253px;
+}
+.footer_button {
+  height: 64px;
+  width: 238px;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  background: #363130;
+  color: #ffffff;
+  padding: 22px 56px 23px 57px;
+}
+.footer_button:hover {
+  opacity: 0.75;
+}
+
+.footer-menu {
+  margin-top: 50px;
+  display: flex;
+}
+
+.footer-menu_first_column {
+  display: flex;
+  flex-flow: column;
+  width: 208px;
+  height: 177px;
+  margin-right: 194px;
+}
+.footer-menu_second_column {
+  display: flex;
+  flex-flow: column;
+  width: 162px;
+  height: 177px;
+  margin-right: 241px;
+}
+.footer-menu-value {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  margin-top: 39px;
+}
+.contacts_text {
+  height: 42px;
+  width: 237px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.social-networks {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 34px;
+}
+.social-networks img {
+  margin-right: 20px;
+}
+.social-networks img:hover {
+  opacity: 0.75;
+}
+.contacts_text2 {
+  height: 21px;
+  width: 237px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+/* footer style end*/
