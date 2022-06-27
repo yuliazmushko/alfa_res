@@ -73,18 +73,19 @@ body {
     url(../img/cloud2.png) no-repeat top 625px left 1330px,
     url(../img/cloud3.png) no-repeat top 1400px left -70px,
     url(../img/cloud4.png) no-repeat top 1987px left 1041px,
-    url(../img/sheet2.png) no-repeat top 2236px left 669px,
+    url(../img/sheet2.png) no-repeat top 2196px left 669px,
     url(../img/video_house.png) no-repeat top 1530px left 0px,
     url(../img/cloud5.png) no-repeat top 2748px left 0px,
-    url(../img/shepki.png) no-repeat top 3036px left 857px,
-    url(../img/house2.png) no-repeat top 3160px left 0px,
-    url(../img/wood2.png) no-repeat top 2911px left 1525px,
+    url(../img/shepki.png) no-repeat top 2986px left 857px,
+    url(../img/house2.png) no-repeat top 3170px left 0px,
+    url(../img/wood2.png) no-repeat top 2911px left 1525px border-box,
     url(../img/shepki\ 2.png) no-repeat top 3520px left 1536px;
 }
 
 .wrapper {
   max-width: 1580px;
   margin: 26px 170px;
+  padding: 0 15px;
 }
 
 /* header styles start*/
@@ -198,9 +199,13 @@ nav ul {
   color: white;
   text-align: left;
   padding: 12px 15px;
-  font-size: 13px;
   padding-left: 34px;
+  font-size: 13px;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  width: 275px;
+  transform: translateX(15%);
+  text-indent: -30px;
 }
 
 .submenu li:last-child a {
@@ -241,37 +246,23 @@ nav ul {
   transform: translateX(25%);
 }
 
-.icon-bar button {
-  width: 87px;
-  height: 64px;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 8px 0px #0000001a;
-  background: #fff;
-  border: #000;
-  border-radius: 3px;
-}
-.icon-bar {
-  display: block;
-  width: 87px;
-  height: 286px;
-  margin-top: 269px;
-  margin-right: 0;
-  transform: translateY(-65%);
-  margin-left: 1646px;
-}
 /* header styles end */
 
 /* info styles start*/
-.info-wrapper {
-  margin: 0 170px;
-}
 
 .info {
-  min-height: 100vh;
-  padding-top: 254px;
+  display: flex;
+  width: 1903px;
   background: url(../img/cloud2.png) no-repeat top 625px left 1330px;
 }
-
+.info-wrapper {
+  display: flex;
+  flex-flow: column;
+  margin-left: 170px;
+  margin-top: 254px;
+  width: 894px;
+  height: 100%;
+}
 .info_title {
   max-width: 874px;
   font-family: Montserrat;
@@ -285,7 +276,7 @@ nav ul {
 
 .info_subtitle {
   height: 78px;
-  width: 848px;
+  width: 874px;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
@@ -295,12 +286,69 @@ nav ul {
   margin-bottom: 44px;
 }
 
-.menu-ico_wrap {
+.menu-ico {
   display: flex;
-  flex-wrap: wrap;
+}
+.menu-ico_wrap {
+  display: inline-block;
+  margin-right: 120px;
   margin-bottom: 61px;
 }
+.menu-ico_wrap:first-child {
+  margin-right: 102px;
+}
+.menu-cases {
+  width: 88px;
+  height: 88px;
+  border: 1px solid rgba(49, 159, 28, 1);
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  background: none;
+}
 
+.menu-video_blog {
+  width: 88px;
+  height: 88px;
+  border: 1px solid rgba(49, 159, 28, 1);
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  background: none;
+}
+
+.menu-articles {
+  width: 88px;
+  height: 88px;
+  border: 1px solid rgba(49, 159, 28, 1);
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  background: none;
+}
+
+.menu-cases:hover,
+.menu-video_blog:hover,
+.menu-articles:hover {
+  border: 5px solid rgba(49, 159, 28, 1);
+  box-shadow: 0px 4px 8px 0px rgba(100, 188, 69, 1);
+}
+
+.menu_ico_text {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+}
+
+.menu_ico_text:hover {
+  font-weight: 600;
+}
+
+.menu_ico_text_case,
+.menu_ico_text_video,
+.menu_ico_text_articles {
+  text-align: center;
+  margin-top: 25px;
+}
 .request-form_info {
   display: flex;
   flex-wrap: wrap;
@@ -362,6 +410,24 @@ a {
   padding-left: 25px;
   margin-top: 22px;
   margin-bottom: 123px;
+}
+
+.icon-bar {
+  display: block;
+  width: 87px;
+  height: 286px;
+  margin-top: 269px;
+  margin-left: 769px;
+}
+
+.icon-bar button {
+  width: 87px;
+  height: 64px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 8px 0px #0000001a;
+  background: #fff;
+  border: #000;
+  border-radius: 3px;
 }
 
 /* info styles end*/
@@ -447,6 +513,10 @@ a {
 
 .cases-button_arr2 {
   transform: translateX(-300%) translateY(-600%);
+}
+.cases-button_arr1:hover,
+.cases-button_arr2:hover {
+  opacity: 0.75;
 }
 
 .cases_project {
@@ -749,6 +819,7 @@ a {
 /*cooperation style start*/
 .cooperation {
   margin-left: 1109px;
+  margin-top: 55px;
 }
 .cooperation_title {
   font-family: Montserrat;
@@ -835,7 +906,6 @@ a {
   width: 1903px;
   height: 299px;
   background: #363130;
-  margin-top: -30px;
 }
 .footer_wrapper {
   display: flex;
