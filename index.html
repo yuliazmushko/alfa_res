@@ -42,29 +42,27 @@
           </a>
           <button class="order-form_submit">Заказать звонок</button>
         </div>
-
+      <nav>
         <ul class="menu">
-          <li>
-            <a href="#"
-              >Каталог домов <img src="./img/polygon.png" alt="polygon"
+          <li><a href="#" class="nav-menu">Каталог домов <img src="./img/polygon.png" alt="polygon"
             /></a>
-            <ul>
+            <ul class="submenu">
               <li><a href="#">Cсылка 1</a></li>
               <li><a href="#">Cсылка 2</a></li>
               <li><a href="#">Cсылка 3</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Услуги <img src="./img/polygon.png" alt="polygon" /></a>
-            <ul>
+            <a href="#" class="nav-menu">Услуги <img src="./img/polygon.png" alt="polygon" /></a>
+            <ul class="submenu">
               <li><a href="#">Cсылка 1</a></li>
               <li><a href="#">Cсылка 2</a></li>
               <li><a href="#">Cсылка 3</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">О нас <img src="./img/polygon.png" alt="polygon" /></a>
-            <ul>
+            <a href="#" class="nav-menu">О нас <img src="./img/polygon.png" alt="polygon" /></a>
+            <ul class="submenu">
               <li><a href="#">Cсылка 1</a></li>
               <li><a href="#">Cсылка 2</a></li>
               <li><a href="#">Cсылка 3</a></li>
@@ -72,15 +70,15 @@
           </li>
           <li><a href="#">Контакты</a></li>
           <li>
-            <a href="#">Блог <img src="./img/polygon.png" alt="polygon" /></a>
-            <ul>
+            <a href="#" class="nav-menu">Блог <img src="./img/polygon.png" alt="polygon" /></a>
+            <ul class="submenu">
               <li><a href="#">Кейсы</a></li>
               <li><a href="#">Видеоблог</a></li>
               <li><a href="#">Полезные статьи</a></li>
             </ul>
           </li>
         </ul>
-
+      </nav>
         <div class="icon-bar">
           <button class="icon-bar_calculator">
             <img
@@ -107,7 +105,7 @@
     </header>
     <main class="main">
       <div class="info">
-        <div class="wrapper">
+        <div class="info-wrapper">
           <h1 class="info_title">
             Мы знаем о строительстве все, каждый новый проект — это отдельная
             история
@@ -185,6 +183,9 @@
 
           <div class="cases_pic">
             <img src="./img/house.png" alt="house" class="cases_house" />
+            <img src="./img/svg/background.svg" alt="button-cases" class="background">
+            <button class="cases-button_arr1"><img src="./img/svg/arrow 1.svg" alt="arrow1"></button>
+            <button class="cases-button_arr2"><img src="./img/svg/arrow 2.svg" alt="arrow2"></button>
           </div>
 
           <div class="cases_project">
@@ -209,7 +210,8 @@
               <a href="/"><img src="./img/svg/arrow 3.svg" alt="arrow" /></a>
             </div>
           </div>
-        </div>
+
+          </div>
       </div>
 
       <div class="video-blog">
@@ -225,12 +227,14 @@
             <div class="video_card">
             <a href="/">
               <div class="video_card-pic">
-               <img src="./img/material-video.jpg" alt="material-video" />
+               <img src="./img/material-video.jpg" alt="material-video" class="material_video"/>
               <span class="video_card-info">
                 <h3 class="video_card-title">
-                  Как выбрать материал для дома?
+                  Как выбрать материал <br> для дома?
                 </h3>
-                <p class="video_text2">Евгений Иванов,
+                <img src="./img/play-button.png" alt="play_button"
+                class="play_button" >
+                <p class="video_text2">Евгений Иванов,<br>
                   руководитель строительной бригады</p>
               </span>
               </div>
@@ -245,7 +249,9 @@
                 <h3 class="video_card-title">
                   Как выбрать подрядчика для строительства дома?
                 </h3>
-                <p class="video_text2">Егор Стародубцев,
+                <img src="./img/play-button.png" alt="play_button"
+                class="play_button" >
+                <p class="video_text2">Егор Стародубцев,<br>
                   основатель компании</p>
               </span>
               </div>
@@ -258,9 +264,11 @@
                  <img src="./img/brick-house.jpg" alt="brick-house" /> 
               <span class="video_card-info">
                 <h3 class="video_card-title">
-                  Преимущества кирпичного дома
+                  Преимущества <br> кирпичного дома
                 </h3>
-                <p class="video_text2">Евгений Иванов,
+                <img src="./img/play-button.png" alt="play_button"
+                class="play_button" >
+                <p class="video_text2">Евгений Иванов,<br>
                   руководитель строительной бригады</p>
               </span>
               </div>
@@ -287,7 +295,7 @@
                <img src="./img/material.jpg" alt="material" />
               <span class="articles_card-info">
                 <h3 class="articles_card-title">
-                  Как выбрать материал для дома?
+                  Как выбрать материал <br> для дома?
                 </h3>
                 <p class="articles_text2">Время на чтение: 3 минуты</p>
                 <div class="articles_text-arrow">
@@ -378,7 +386,7 @@
           </div>
           <div class="footer-menu_second_column">
           <a href="/" class="footer-menu-value">Экскурсия на объект</a>
-          <a href="/" class="footer-menu-value">3D-макет дома</a>
+          <a href="/" class="footer-menu-value">ЗD-макет дома</a>
           <a href="/" class="footer-menu-value">О нас</a>
           <a href="/" class="footer-menu-value">Блог</a>
           <a href="/" class="footer-menu-value">Контакты</a>
